@@ -5,7 +5,7 @@
 :root {
   --primary-color: #047aed;
   --secondary-color: #1c3fa8;
-  --dark-color: #1c3fa8;
+  --dark-color: #011247;
   --light-color: #dce0ee;
   --success-color: #5cb85c;
   --error-color: red;
@@ -68,8 +68,10 @@ pre {
   padding: 10px;
   margin: 0 5px;
 }
-.navbar a:hover {
-  border-bottom: 2px white solid;
+.navbar li a:hover {
+  border-bottom: 2px var(--dark-color) solid;
+  color: var(--dark-color);
+  font-size: 18px;
 }
 /* ----------- Showcase ---------------- */
 
@@ -241,9 +243,35 @@ pre {
 }
 
 /* Footer */
+.footer .social {
+  margin: auto;
+}
 .footer .social a {
   margin: 0 10px;
 }
+
+.footer .flex-style {
+  justify-content: space-between;
+}
+.footer ul li {
+  padding: 0 1em;
+  font-size: 20px;
+}
+.footer li a:hover {
+  border-bottom: 2px var(--primary-color) solid;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.footer .social a:hover {
+  color: var(--primary-color);
+}
+
+.copyright {
+  /* font-size: px; */
+  text-align: center;
+}
+
 
 /*Animations*/
 @keyframes slideInFromLeft {
